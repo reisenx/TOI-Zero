@@ -2,7 +2,7 @@
 #include<vector>
 using namespace std;
 
-bool hasAllHole = true;
+bool hasAllHoles = true;
 int N, W, L;
 vector<vector<bool>> woods;
 
@@ -39,20 +39,20 @@ int main()
     // Check hole on all woods
     for(int x = 0; x < W; x++)
     {
-        hasAllHole = true;
+        hasAllHoles = true;
         for(int i = 0; i < N; i++)
         {
             if(!woods[i][x])
             {
-                hasAllHole = false;
+                hasAllHoles = false;
                 break;
             }
         }
-        if(hasAllHole) { break; }
+        if(hasAllHoles) { break; }
     }
 
     // Output
-    if(hasAllHole) { cout << "1\n"; }
+    if(hasAllHoles) { cout << "1\n"; }
     else { cout << "0\n"; }
     return 0;
 }
