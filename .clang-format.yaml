@@ -1,0 +1,4 @@
+# .clang-format
+---
+# Use the Google style as the foundation for all rules.
+BasedOnStyle: Google
