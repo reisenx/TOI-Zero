@@ -1,10 +1,17 @@
+# --------------------------------------------------
+# File Name : A1-040.py
+# Problem   : Total Calories
+# Author    : Worralop Srichainont
+# Date      : 2026-03-13
+# --------------------------------------------------
+
 # Fruits calories
 CALORIES = [100, 120, 200, 60]
 
 # Input orders until exits
 total_calories = 0
 order = int(input())
-while(order != 5):
+while order != 5:
     total_calories += CALORIES[order - 1]
     order = int(input())
 
