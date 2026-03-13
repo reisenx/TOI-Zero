@@ -1,7 +1,14 @@
+# --------------------------------------------------
+# File Name : A1-001.py
+# Problem   : Hello Name
+# Author    : Worralop Srichainont
+# Date      : 2026-01-01
+# --------------------------------------------------
+
 # Input names
-name01 = input().strip()
-name02 = input().strip()
+name_01 = input().strip()
+name_02 = input().strip()
 
 # Output
-print("Hello", name01, name02)
-print(name01[:2] + name02[:2])
+print(f"Hello {name_01} {name_02}")
+print(f"{name_01[:2]}{name_02[:2]}")
