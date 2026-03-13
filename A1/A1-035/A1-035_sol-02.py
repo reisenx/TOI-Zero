@@ -1,6 +1,6 @@
 # --------------------------------------------------
-# File Name : A1-032.py
-# Problem   : Star
+# File Name : A1-035_sol-02.py
+# Problem   : Squared Sum
 # Author    : Worralop Srichainont
 # Date      : 2026-03-13
 # --------------------------------------------------
@@ -9,6 +9,4 @@
 n = int(input())
 
 # Output
-print("*" * max(0, n))
-print("*" * max(0, n - 2))
-print("*" * max(0, n - 4))
+print((n * (n + 1) * ((2 * n) + 1)) // 6)
