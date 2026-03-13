@@ -1,12 +1,20 @@
+# --------------------------------------------------
+# File Name : A1-009.py
+# Problem   : Pass
+# Author    : Worralop Srichainont
+# Date      : 2026-02-08
+# --------------------------------------------------
+
 # Input score
 midterm = int(input())
 finals = int(input())
 
-# Output
+# Calculate total score
 total = midterm + finals
-print(total)
 
-if(total >= 50):
+# Output
+print(total)
+if total >= 50:
     print("pass")
 else:
     print("fail")
