@@ -1,10 +1,23 @@
-# Input
-num01 = int(input())
-operation = input()
+# --------------------------------------------------
+# File Name : A1-012.py
+# Problem   : Reverse a number
+# Author    : Worralop Srichainont
+# Date      : 2026-02-08
+# --------------------------------------------------
+
+# Input the number and the operation
+num = int(input().strip())
+operation = input().strip()
+
 # Reverse a number
-num02 = int(str(num01)[::-1])
+reversed_num = int(str(num)[::-1])
+
+# Calculate result
+result = 0
+if operation == "+":
+    result = num + reversed_num
+elif operation == "*":
+    result = num * reversed_num
+
 # Output
-if(operation == '+'):
-    print(num01, '+', num02, '=', num01 + num02)
-elif(operation == '*'):
-    print(num01, '*', num02, '=', num01 * num02)
+print(f"{num} {operation} {reversed_num} = {result}")
