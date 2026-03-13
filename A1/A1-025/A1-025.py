@@ -1,21 +1,32 @@
-# Data Preparation
-NUMS = {'A':'ace', 'J':'jack', 'Q':'queen', 'K':'king'}
-GROUPS = {'D':'diamonds', 'H':'hearts', 'S':'spades', 'C':'clubs'}
+# --------------------------------------------------
+# File Name : A1-025.py
+# Problem   : Cards
+# Author    : Worralop Srichainont
+# Date      : 2026-02-08
+# --------------------------------------------------
 
-# Input
-card = input()
+# Dict of card value and card groups
+CARD_VALUES = {
+    "A": "ace",
+    "2": "2",
+    "3": "3",
+    "4": "4",
+    "5": "5",
+    "6": "6",
+    "7": "7",
+    "8": "8",
+    "9": "9",
+    "10": "10",
+    "J": "jack",
+    "Q": "queen",
+    "K": "king",
+}
+CARD_GROUPS = {"D": "diamonds", "H": "hearts", "S": "spades", "C": "clubs"}
 
-# Find card name
-card = card.upper()
-num = card[:-1]
-group = card[-1]
+# Input card and find its value and group
+card = input().upper()
+card_value = card[:-1]
+card_group = card[-1]
 
-card_name = ""
-if(num in NUMS):
-    card_name += NUMS[num]
-else:
-    card_name += num
-card_name += " of " + GROUPS[group]
-
-# Output
-print(card_name)
+# Output card name
+print(f"{CARD_VALUES[card_value]} of {CARD_GROUPS[card_group]}")

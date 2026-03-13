@@ -1,18 +1,28 @@
-# Input
-temp = int(input())
-unit = input()
-# Output
-if(unit.upper() == 'C'):
-    if(temp <= 0):
+# --------------------------------------------------
+# File Name : A1-023.py
+# Problem   : Water State
+# Author    : Worralop Srichainont
+# Date      : 2026-02-08
+# --------------------------------------------------
+
+# Input temperature
+temperature = int(input())
+unit = input().strip()
+
+# Output the water state for Celsius unit
+if unit.upper() == "C":
+    if temperature <= 0:
         print("solid")
-    if(0 < temp < 100):
+    elif temperature < 100:
         print("liquid")
-    if(temp >= 100):
+    elif temperature >= 100:
         print("gas")
-if(unit.upper() == 'F'):
-    if(temp <= 32):
+
+# Output the water state for Fahrenheit unit
+if unit.upper() == "F":
+    if temperature <= 32:
         print("solid")
-    if(32 < temp < 212):
+    elif temperature < 212:
         print("liquid")
-    if(temp > 212):
+    elif temperature > 212:
         print("gas")
